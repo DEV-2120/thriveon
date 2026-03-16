@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "69b832a4b1b9bb11b8ae9b80"
+  },
+  "name": "John Doe",
+  "email": "john@email.com",
+  "phone": "1234567890",
+  "visaStatus": "OPT",
+  "skills": [
+    "Python",
+    "SQL",
+    "Power BI"
+  ],
+  "createdAt": {
+    "$date": "2026-03-16T16:41:08.401Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b832d0b1b9bb11b8ae9b81"
+  },
+  "name": "Sarah Lee",
+  "email": "sarah@email.com",
+  "phone": "5551234567",
+  "visaStatus": "OPT",
+  "skills": [
+    "Java",
+    "Spring Boot"
+  ],
+  "createdAt": {
+    "$date": "2026-03-16T16:41:52.677Z"
+  }
+}]
