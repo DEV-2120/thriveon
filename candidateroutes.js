@@ -23,7 +23,15 @@ router.post("/apply", upload.single("resume"), async (req, res) => {
             skills: req.body.skills,
             resume: req.file.filename
         };
-
+// GET all candidates
+router.get("/candidates", async (req, res) => {
+    try {
+        const candidates = await Candidate.find();  // fetch all candidates from MongoDB
+        res.json(candidates);                      // send as JSON to frontend
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
         const candidate = new Candidate(candidateData);
         await candidate.save();
 
